@@ -1,6 +1,9 @@
-# VaultAPI - Abstraction Library API for Bukkit Plugins - ![Travis-ci](https://travis-ci.org/MilkBowl/VaultAPI.svg?branch=master)
+# VaultAPI - Abstraction Library API for Bukkit Plugins
+# VaultAPI - 提供给Bukkit插件的一个抽象化库 - ![Travis-ci](https://travis-ci.org/MilkBowl/VaultAPI.svg?branch=master)
 
 How to use with maven: note that the VaultAPI version is 2 numerals, unlike Vault versions which are 3.  The 2 numerals in the VaultAPI will always correspond to the 2 beginning numerals in a Vault version to make it clear what versions your plugin will for sure work with.
+如何在Maven中使用: 注意VaultAPI的版本号是两个数字, 区别于Vault的版本号为三个数字. VaultAPI版本号中的两位数总是对应Vault版本号的前两个数字, 这让你更加明确应该使用哪个版本的Vault做为前置.
+将以下代码添加到pom.xml中即可.
 ```
     <repositories>
         <repository>
@@ -20,10 +23,12 @@ How to use with maven: note that the VaultAPI version is 2 numerals, unlike Vaul
 ```
 
 ## Why Vault?
+## 为什么选择Vault?
 I have no preference which library suits your plugin and development efforts
 best.  Really, I thought a central suite (rather...Vault) of solutions was the
 the proper avenue than focusing on a single category of plugin.  That's where
 the idea for Vault came into play.
+我并没有想告诉你如何选择一个适合的库以方便你的开发. 事实上, 我认为使用一个汇总起来的库(类似->Vault)是一个更加适合用于编写单一类别插件的方法. 这就是我对Vault的想法发挥作用的地方.
 
 So, what features do I _think_ you'll like the most?
 
