@@ -23,7 +23,7 @@ import org.bukkit.entity.Player;
 
 /**
  * The main Chat API - allows for Prefix/Suffix nodes along with generic Info nodes if the linked Chat system supports them
- *
+ * 聊天系统API - 如果有聊天系统的支持, 则可以使用前缀/后缀节点以及通用信息节点
  */
 public abstract class Chat {
 	
@@ -34,13 +34,17 @@ public abstract class Chat {
 	}
     /**
      * Gets name of permission method
+     * 获取权限方法名
      * @return Name of Permission Method
+     * 		权限方法名
      */
     abstract public String getName();
 
     /**
      * Checks if permission method is enabled.
+     * 是否启用了权限方法
      * @return Success or Failure
+     * 		成功或者失败 (true 或者  false)
      */
     abstract public boolean isEnabled();
     
