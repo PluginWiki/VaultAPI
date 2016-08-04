@@ -31,7 +31,10 @@ public class Items {
 
     /**
      * Returns the list of ItemInfo's registered in Vault as an UnmodifiableList.
+     * 返回在Vault的ItemInfo注册的物品列表作为不可修改的物品列表
+     * 
      * @return list of Items
+     * 物品列表
      */
     public static List<ItemInfo> getItemList() {
         return Collections.unmodifiableList(items);
@@ -39,6 +42,7 @@ public class Items {
 
     static {
         //1.9 Blocks & Items
+    	//1.9    方块  & 物品
         items.add(new ItemInfo("End Rod", new String[][]{{"end", "rod"}}, Material.END_ROD));
         items.add(new ItemInfo("Chorus Plant", new String[][]{{"chor", "plan"}}, Material.CHORUS_PLANT));
         items.add(new ItemInfo("Chorus Flower", new String[][]{{"chor", "flow"}}, Material.CHORUS_FLOWER));
@@ -66,13 +70,15 @@ public class Items {
         items.add(new ItemInfo("Acacia Boat", new String[][]{{"acac", "boa"}}, Material.BOAT_ACACIA));
         items.add(new ItemInfo("Dark Oak Boat", new String[][]{{"dark", "oak", "boa"}}, Material.BOAT_DARK_OAK));
         items.add(new ItemInfo("Birch Boat", new String[][]{{"birc", "boa"}}, Material.BOAT_BIRCH));
-        items.add(new ItemInfo("Oak Boat", new String[][]{{"oak", "boat"}, {"boat"}}, Material.BOAT)); //Original boat is now called an Oak Boat, mat name hasnt changed.
+        items.add(new ItemInfo("Oak Boat", new String[][]{{"oak", "boat"}, {"boat"}}, Material.BOAT)); //Original boat is now called an Oak Boat, mat name hasnt changed.原来的船被称为像素(橡树)船, mat的名称未改变
         items.add(new ItemInfo("Spectral Arrow", new String[][] {{"spec", "arrow"}}, Material.SPECTRAL_ARROW));
         items.add(new ItemInfo("Tipped Arrow", new String[][] {{"tipp", "arrow"}}, Material.TIPPED_ARROW));
         items.add(new ItemInfo("Splash Potion", new String[][] {{"spla", "poti"}}, Material.SPLASH_POTION));
         items.add(new ItemInfo("Lingering Potion", new String[][] {{"linger", "poti"}}, Material.LINGERING_POTION));
         /* 1.9 possibly inncorrect or depreciated items for potions dont use short data values any more for potion types....
            Need to look into this see if there is issues here down the road....... */
+        /* 1.9可能不正确或者药水物品不再使用短数据值作为更多的药水类型
+           	需要看看下面的方法有无问题*/
         items.add(new ItemInfo("Splash Mundane Potion", new String[][] {{"poti", "mund", "spl"}}, Material.POTION, (short) 16384));
         items.add(new ItemInfo("Splash Potion of Regeneration", new String[][] {{"poti", "rege", "spl"}}, Material.POTION, (short) 16385));
         items.add(new ItemInfo("Splash Potion of Regeneration (Extended)", new String[][] {{"poti", "rege", "spl", "ext"}}, Material.POTION, (short) 16449));
@@ -176,6 +182,7 @@ public class Items {
         items.add(new ItemInfo("Iron Block", new String[][]{{"iron", "bl"}}, Material.IRON_BLOCK));
         /* 
          * No longer obtainable in inventory in 1.8
+         * 不再在1.8背包中可取得的
          * items.add(new ItemInfo("Double Stone Slab", new String[][]{{"doub", "slab"}, {"doub", "slab", "sto"}, {"doub", "step", "sto"}}, Material.DOUBLE_STEP));
          * items.add(new ItemInfo("Double Sandstone Slab", new String[][]{{"doub", "slab", "sand", "sto"}, {"doub", "step", "sand", "sto"}}, Material.DOUBLE_STEP, (short) 1));
          * items.add(new ItemInfo("Double Wooden Slab", new String[][]{{"doub", "slab", "wood"}, {"doub", "step", "wood"}}, Material.DOUBLE_STEP, (short) 2));
@@ -432,6 +439,7 @@ public class Items {
         items.add(new ItemInfo("Potion of Harming II", new String[][] {{"poti", "harm", "2"}, {"poti", "harm", "ii"}}, Material.POTION, (short) 8236));
         items.add(new ItemInfo("Splash Mundane Potion", new String[][] {{"poti", "mund", "spl"}}, Material.POTION, (short) 16384));
         /* Splash Potions and potions changed majorly 1.9 saving for reference
+         * 喷溅药水和药水的更新主要参考1.9
         items.add(new ItemInfo("Splash Potion of Regeneration", new String[][] {{"poti", "rege", "spl"}}, Material.POTION, (short) 16385));
         items.add(new ItemInfo("Splash Potion of Regeneration (Extended)", new String[][] {{"poti", "rege", "spl", "ext"}}, Material.POTION, (short) 16449));
         items.add(new ItemInfo("Splash Potion of Regeneration II", new String[][] {{"poti", "rege", "spl", "2"}, {"poti", "rege", "spl", "ii"}}, Material.POTION, (short) 16417));
@@ -504,6 +512,7 @@ public class Items {
         items.add(new ItemInfo("Redstone Lamp", new String[][] {{"lamp"}, {"lamp", "redst"}}, Material.REDSTONE_LAMP_OFF));
         items.add(new ItemInfo("Redstone Torch Off", new String[][] {{"off", "red", "sto", "tor"}}, Material.REDSTONE_TORCH_OFF));
         //1.3 Blocks & Items
+        //1.3 方块和物品
         items.add(new ItemInfo("Emerald Ore", new String[][]{{"emer", "ore"}}, Material.EMERALD_ORE));
         items.add(new ItemInfo("Emerald", new String[][]{{"emer"}}, Material.EMERALD));
         items.add(new ItemInfo("Emerald Block", new String[][]{{"emer", "blo"}}, Material.EMERALD_BLOCK));
@@ -513,6 +522,7 @@ public class Items {
         items.add(new ItemInfo("Sandstone Stair", new String[][]{{"stair", "sand", "sto"}, {"stair", "sand"}}, Material.SANDSTONE_STAIRS));
         /*
          * Double slabs removed from Inventory in 1.8
+         * 双层石板被从1.8的背包中移除
          * 
          * items.add(new ItemInfo("Double Oak Slab", new String[][]{{"doub", "slab", "oak"}, {"doub", "step", "oak"}}, Material.WOOD_DOUBLE_STEP));
          * items.add(new ItemInfo("Double Spruce Slab", new String[][]{{"doub", "slab", "spru"}, {"doub", "step", "spru"}}, Material.WOOD_DOUBLE_STEP, (short) 1));
@@ -579,6 +589,7 @@ public class Items {
         items.add(new ItemInfo("Dead Bush", new String[][]{{"dea", "bush"}}, Material.DEAD_BUSH));
         items.add(new ItemInfo("Nether Brick Slab", new String[][]{{"sla", "net", "bri"}, {"step", "net", "bri"}}, Material.STEP, (short) 6));
         //1.5 Blocks & Items
+        //1.5的方块和物品
         items.add(new ItemInfo("Activator Rail", new String[][]{{"rail", "acti"}, {"trac", "acti"}, {"activ"}}, Material.ACTIVATOR_RAIL));
         items.add(new ItemInfo("Block of Redstone", new String[][]{{"block", "red"}, {"block", "rs"}}, Material.REDSTONE_BLOCK));
         items.add(new ItemInfo("Daylight Sensor", new String[][]{{"day", "sen"}, {"ligh", "sen"}}, Material.DAYLIGHT_DETECTOR));
@@ -600,6 +611,7 @@ public class Items {
         items.add(new ItemInfo("Weighted Gold Plate", new String[][]{{"wei", "plat", "gol"}, {"pres", "plat", "gol"}}, Material.GOLD_PLATE));
         items.add(new ItemInfo("Weighted Iron Plate", new String[][]{{"wei", "plat", "iro"}, {"pres", "plat", "iro"}}, Material.IRON_PLATE));
         //1.6 Blocks and Items
+        //1.6方块和物品
         items.add(new ItemInfo("Horse Spawn Egg", new String[][] {{"horse", "egg"}}, Material.MONSTER_EGG, (short) 100));
         items.add(new ItemInfo("Diamond Horse Armor", new String[][] {{"dia", "horse", "arm"}, {"dia", "bard"}}, Material.DIAMOND_BARDING));
         items.add(new ItemInfo("Gold Horse Armor", new String[][] {{"gold", "horse", "arm"}, {"gold", "bard"}}, Material.GOLD_BARDING));
@@ -642,8 +654,10 @@ public class Items {
         items.add(new ItemInfo("Red Carpet", new String[][]{{"carpet", "red"}}, Material.CARPET, (short) 14));
         items.add(new ItemInfo("Black Carpet", new String[][]{{"carpet", "bla"}}, Material.CARPET, (short) 15));
         //1.7 Blocks and Items
+        //1.7方块和物品
         items.add(new ItemInfo("Packed Ice", new String[][]{{"pack", "ice"}}, Material.PACKED_ICE));
         // renamed from grassless dirt in 1.8 to Coarse Dirt.
+        // 1.8重命名grassless dirt为Coarse Dirt
         items.add(new ItemInfo("Coarse Dirt", new String[][]{{"coar", "dirt"}, {"less", "dirt"}}, Material.DIRT, (short) 1)); 
         items.add(new ItemInfo("Acacia Log", new String[][]{{"acac"}, {"log", "acac"}}, Material.LOG_2));
         items.add(new ItemInfo("Dark Oak Log", new String[][]{{"oak", "dar"}, {"log", "oak", "dar"}}, Material.LOG_2, (short) 1));
@@ -722,6 +736,7 @@ public class Items {
         items.add(new ItemInfo("Acacia Slab", new String[][]{{"slab", "aca"}, {"step", "aca"}}, Material.WOOD_STEP, (short) 4));
         items.add(new ItemInfo("Dark Oak Slab", new String[][]{{"slab", "dar", "oak"}, {"step", "dar", "oak"}}, Material.WOOD_STEP, (short) 5));
         // items added in 1.8
+        // 1.8添加的物品
         items.add(new ItemInfo("Granite", new String[][]{{"gran"}}, Material.STONE, (short) 1));
         items.add(new ItemInfo("Polished Granite", new String[][]{{"pol", "gran"}, {"smoo", "gran"}}, Material.STONE, (short) 2));
         items.add(new ItemInfo("Diorite", new String[][]{{"dior"}}, Material.STONE, (short) 3));
@@ -808,8 +823,12 @@ public class Items {
 
     /**
      * Searchs for an ItemInfo from the given ItemStack
+     * 从ItemInfo中搜索给出的ItemStack
+     * 
      * @param itemStack to search on
+     * 要搜索的ItemStack
      * @return ItemInfo found, or null
+     * 找到则返回, 若未找到返回null
      */
     public static ItemInfo itemByStack(ItemStack itemStack) {
         if (itemStack == null) {
@@ -838,8 +857,11 @@ public class Items {
 
     /**
      * Gets a relevant ItemInfo by it's Material
+     * 利用 物品的Material获取ItemInfo
+     * 
      * @param type of Material
      * @return ItemInfo record found or null if none
+     * 如果存在返回ItemInfo否则返回null
      */
     public static ItemInfo itemByType(Material type) {
         return itemByType(type, (short) 0);
@@ -847,9 +869,13 @@ public class Items {
 
     /**
      * Searches for an ItemInfo record by Material and SubTypeID
+     * 搜索ItemInfo利用Material和子类型ID
+     * 
      * @param type of Material
      * @param subType to check for
+     * 短型ID
      * @return ItemInfo record found or null if none
+     * 如果存在返回ItemInfo否则返回null
      */
     public static ItemInfo itemByType(Material type, short subType) {
         for (ItemInfo item : items) {
@@ -865,6 +891,10 @@ public class Items {
      *  Checks first for an ItemID.
      *  Checks second for ItemID:SubType
      *  Last, it will run a by-name item search assuming the string is the name of an item.
+     * 利用String搜索Item. 可以用来操作玩家输入. 使用三种不同类型去搜索
+     * 	检查ItemID
+     * 	检查ItemID:特殊值
+     * 	最好他将会利用String搜索
      *   
      * @param string to parse
      * @return ItemInfo found or null
@@ -913,11 +943,15 @@ public class Items {
 
     /**
      * Multi-Item return search for dumping all items with the search string to the player
+     * 利用String返回多个ID合集给玩家
      *
      *
      * @param searchString to search for
+     * 要搜索的
      * @param multi whether to return a list of items or just the first
+     * 是否要返回item列表
      * @return Array of items found
+     * 找到Item的数组
      */
     public static ItemInfo[] itemsByName(String searchString, boolean multi) {
         if (multi == false) {
@@ -986,9 +1020,12 @@ public class Items {
 
     /**
      * Single item search function, for when we only ever want to return 1 result
+     * 单一物品搜索功能. 用于只会返回一个结果的情况
      *
      * @param searchString to search for
+     * 要搜索的物品
      * @return ItemInfo Object
+     * ItemInfo对象
      */
     public static ItemInfo itemByName(String searchString) {
         ItemInfo matchedItem = null;
@@ -1082,9 +1119,13 @@ public class Items {
 
     /**
      * Joins elements of a String array with the glue between them into a String.
+     * 连接字符串数组元素
      * @param array of elements to join together
+     * 要连接的数组元素
      * @param glue what to put between each element
+     * 要放到每个元素之间的玩意
      * @return Concacted Array combined with glue
+     * 拼接完成的数组
      */
     public static String join(String[] array, String glue) {
         String joined = null;
@@ -1105,9 +1146,13 @@ public class Items {
 
     /**
      * Joins elements of a String array with the glue between them into a String.
+     * 连接字符串数组元素
      * @param list of items to join together
+     * 要连接的数组元素
      * @param glue what to put between each element
+     * 要放到每个元素之间的玩意
      * @return Concacted Array combined with glue
+     * 拼接完成后的数据
      */
     public static String join(List<String> list, String glue) {
         String joined = null;
