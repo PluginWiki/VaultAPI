@@ -1087,6 +1087,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (String) value
+     * 设置玩家信息节点值(字符串)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -1098,6 +1100,8 @@ public abstract class Chat {
 
     /**
      * Get a groups informational node (String) value
+     * 获取组信息节点值(字符串)
+     * 
      * @param world Name of World
      * 				世界名
      * @param group Name of Group
@@ -1126,6 +1130,8 @@ public abstract class Chat {
 
     /**
      * Set a groups informational node (String) value
+     * 设置组信息节点值(字符串)
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
@@ -1137,6 +1143,8 @@ public abstract class Chat {
 
     /**
      * Set a groups informational node (String) value
+     * 设置组信息节点值(字符串)
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
@@ -1150,12 +1158,15 @@ public abstract class Chat {
     
     /**
      * Check if player is member of a group.
+     * 检查玩家是否在一个组内
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
      * @param group Group name
      * 				组名
      * @return Success or Failure
+     * 			成功或者失败(true 或者  false)
      */
     public boolean playerInGroup(String world, OfflinePlayer player, String group) {
     	return perms.playerInGroup(world, player, group);
@@ -1163,7 +1174,10 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #playerInGroup(String, OfflinePlayer, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #playerInGroup(String, OfflinePlayer, String)} 替代 
      * Check if player is member of a group.
+     * 检查玩家是否在一个组内
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -1179,7 +1193,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #playerInGroup(String, OfflinePlayer, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #playerInGroup(String, OfflinePlayer, String)} 替代 
+     * 
      * Check if player is member of a group.
+     * 检查玩家是否在一个组内
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -1195,6 +1213,8 @@ public abstract class Chat {
 
     /**
      * Check if player is member of a group.
+     * 检查玩家是否在一个组内
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param group Group name
@@ -1206,6 +1226,8 @@ public abstract class Chat {
     
     /**
      * Gets the list of groups that this player has
+     * 获取一个玩家所在组的列表
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -1217,7 +1239,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerGroups(String, OfflinePlayer)} instead.
+     * 				从 VaultAPI 1.4 起使用  {{@link #getPlayerGroups(String, OfflinePlayer)} 替代
+     * 
      * Gets the list of groups that this player has
+     * 获取一个玩家所在组的列表
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -1231,8 +1257,13 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerGroups(String, OfflinePlayer)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerGroups(String, OfflinePlayer)} 替代
+     * 
      * Gets the list of groups that this player has
+     * 获取一个玩家所在组的列表
+     * 
      * @param world World Object
+     * 				世界对象
      * @param player Player name
      * 				玩家名
      * @return Array of groups
@@ -1244,6 +1275,8 @@ public abstract class Chat {
 
     /**
      * Gets the list of groups that this player has
+     * 获取一个玩家所在组的列表
+     * 
      * @param player Player Object
      * 				玩家对象
      * @return Array of groups
@@ -1254,6 +1287,8 @@ public abstract class Chat {
     
     /**
      * Gets players primary group
+     * 获取玩家的主组
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -1265,7 +1300,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPrimaryGroup(String, OfflinePlayer)} instead. 
+     * 				从 VaultAPI 1.4 起使用  {{@link #getPrimaryGroup(String, OfflinePlayer)} 替代 
+     * 
      * Gets players primary group
+     * 获取玩家的主组
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -1279,7 +1318,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPrimaryGroup(String, OfflinePlayer)} instead.
+     * 				从 VaultAPI 1.4 起使用  {{@link #getPrimaryGroup(String, OfflinePlayer)} 替代
+     * 
      * Gets players primary group
+     * 获取玩家的主组
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -1293,7 +1336,10 @@ public abstract class Chat {
 
     /**
      * Get players primary group
+     * 获取玩家的主组
+     * 
      * @param player Player Object
+     * 				玩家对象
      * @return Players primary group
      */
     public String getPrimaryGroup(Player player) {
