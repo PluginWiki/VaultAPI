@@ -234,7 +234,8 @@ public abstract class Chat {
      * 
      * @param player Player Object
      * 				玩家对象
-     * @return Suffix 后缀
+     * @return Suffix 
+     * 				后缀
      */
     public String getPlayerSuffix(Player player) {
         return getPlayerSuffix(player.getWorld().getName(), player);
@@ -313,6 +314,7 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @return Prefix
+     * 				前缀
      */
     abstract public String getGroupPrefix(String world, String group);
 
@@ -325,6 +327,7 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @return Prefix
+     * 				前缀
      */
     public String getGroupPrefix(World world, String group) {
         return getGroupPrefix(world.getName(), group);
@@ -339,6 +342,7 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param prefix Prefix
+     * 				前缀
      */
     abstract public void setGroupPrefix(String world, String group, String prefix);
 
@@ -351,6 +355,7 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param prefix Prefix
+     * 				前缀
      */
     public void setGroupPrefix(World world, String group, String prefix) {
         setGroupPrefix(world.getName(), group, prefix);
@@ -417,9 +422,13 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public int getPlayerInfoInteger(String world, OfflinePlayer player, String node, int defaultValue) {
     	return getPlayerInfoInteger(world, player.getName(), node, defaultValue);
@@ -436,8 +445,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     abstract public int getPlayerInfoInteger(String world, String player, String node, int defaultValue);
@@ -454,8 +466,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     public int getPlayerInfoInteger(World world, String player, String node, int defaultValue) {
@@ -469,8 +484,11 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public int getPlayerInfoInteger(Player player, String node, int defaultValue) {
         return getPlayerInfoInteger(player.getWorld().getName(), player, node, defaultValue);
@@ -483,6 +501,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
      * @param value Value to set
      */
@@ -562,8 +581,11 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public int getGroupInfoInteger(World world, String group, String node, int defaultValue) {
         return getGroupInfoInteger(world.getName(), group, node, defaultValue);
@@ -578,7 +600,9 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     abstract public void setGroupInfoInteger(String world, String group, String node, int value);
 
@@ -591,7 +615,9 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setGroupInfoInteger(World world, String group, String node, int value) {
         setGroupInfoInteger(world.getName(), group, node, value);
@@ -604,9 +630,13 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public double getPlayerInfoDouble(String world, OfflinePlayer player, String node, double defaultValue) {
     	return getPlayerInfoDouble(world, player.getName(), node, defaultValue);
@@ -624,8 +654,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     abstract public double getPlayerInfoDouble(String world, String player, String node, double defaultValue);
@@ -642,8 +675,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     public double getPlayerInfoDouble(World world, String player, String node, double defaultValue) {
@@ -657,8 +693,11 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public double getPlayerInfoDouble(Player player, String node, double defaultValue) {
         return getPlayerInfoDouble(player.getWorld().getName(), player, node, defaultValue);
@@ -671,8 +710,11 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setPlayerInfoDouble(String world, OfflinePlayer player, String node, double value) {
     	setPlayerInfoDouble(world, player.getName(), node, value);
@@ -690,7 +732,9 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     @Deprecated
     abstract public void setPlayerInfoDouble(String world, String player, String node, double value);
@@ -706,7 +750,9 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     @Deprecated
     public void setPlayerInfoDouble(World world, String player, String node, double value) {
@@ -720,7 +766,9 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setPlayerInfoDouble(Player player, String node, double value) {
         setPlayerInfoDouble(player.getWorld().getName(), player, node, value);
@@ -735,8 +783,11 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     abstract public double getGroupInfoDouble(String world, String group, String node, double defaultValue);
 
@@ -749,8 +800,11 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public double getGroupInfoDouble(World world, String group, String node, double defaultValue) {
         return getGroupInfoDouble(world.getName(), group, node, defaultValue);
@@ -765,7 +819,9 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     abstract public void setGroupInfoDouble(String world, String group, String node, double value);
 
@@ -778,7 +834,9 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setGroupInfoDouble(World world, String group, String node, double value) {
         setGroupInfoDouble(world.getName(), group, node, value);
@@ -791,9 +849,13 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public boolean getPlayerInfoBoolean(String world, OfflinePlayer player, String node, boolean defaultValue) {
     	return getPlayerInfoBoolean(world, player.getName(), node, defaultValue);
@@ -811,8 +873,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     abstract public boolean getPlayerInfoBoolean(String world, String player, String node, boolean defaultValue);
@@ -829,8 +894,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     public boolean getPlayerInfoBoolean(World world, String player, String node, boolean defaultValue) {
@@ -844,8 +912,11 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public boolean getPlayerInfoBoolean(Player player, String node, boolean defaultValue) {
         return getPlayerInfoBoolean(player.getWorld().getName(), player, node, defaultValue);
@@ -858,8 +929,11 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setPlayerInfoBoolean(String world, OfflinePlayer player, String node, boolean value) {
     	setPlayerInfoBoolean(world, player.getName(), node, value);
@@ -877,7 +951,9 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     @Deprecated
     abstract public void setPlayerInfoBoolean(String world, String player, String node, boolean value);
@@ -894,7 +970,9 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     @Deprecated
     public void setPlayerInfoBoolean(World world, String player, String node, boolean value) {
@@ -908,7 +986,9 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setPlayerInfoBoolean(Player player, String node, boolean value) {
         setPlayerInfoBoolean(player.getWorld().getName(), player, node, value);
@@ -923,8 +1003,11 @@ public abstract class Chat {
      * @param group Name of Group
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     abstract public boolean getGroupInfoBoolean(String world, String group, String node, boolean defaultValue);
 
@@ -935,9 +1018,13 @@ public abstract class Chat {
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public boolean getGroupInfoBoolean(World world, String group, String node, boolean defaultValue) {
         return getGroupInfoBoolean(world.getName(), group, node, defaultValue);
@@ -976,6 +1063,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -996,8 +1084,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     abstract public String getPlayerInfoString(String world, String player, String node, String defaultValue);
@@ -1014,8 +1105,11 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     @Deprecated
     public String getPlayerInfoString(World world, String player, String node, String defaultValue) {
@@ -1029,8 +1123,11 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public String getPlayerInfoString(Player player, String node, String defaultValue) {
         return getPlayerInfoString(player.getWorld().getName(), player, node, defaultValue);
@@ -1043,8 +1140,11 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setPlayerInfoString(String world, OfflinePlayer player, String node, String value) {
     	setPlayerInfoString(world, player.getName(), node, value);
@@ -1062,7 +1162,9 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     @Deprecated
     abstract public void setPlayerInfoString(String world, String player, String node, String value);
@@ -1078,7 +1180,9 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     @Deprecated
     public void setPlayerInfoString(World world, String player, String node, String value) {
@@ -1092,7 +1196,9 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
-     * @param value Value ot set
+     * 				权限节点
+     * @param value Value to set
+     * 				需要设置的值
      */
     public void setPlayerInfoString(Player player, String node, String value) {
         setPlayerInfoString(player.getWorld().getName(), player, node, value);
@@ -1107,8 +1213,11 @@ public abstract class Chat {
      * @param group Name of Group
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     abstract public String getGroupInfoString(String world, String group, String node, String defaultValue);
 
@@ -1121,8 +1230,11 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param defaultValue Default value
+     * 				默认值
      * @return Value
+     * 				值
      */
     public String getGroupInfoString(World world, String group, String node, String defaultValue) {
         return getGroupInfoString(world.getName(), group, node, defaultValue);
@@ -1137,7 +1249,9 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     abstract public void setGroupInfoString(String world, String group, String node, String value);
 
@@ -1150,7 +1264,9 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @param node Permission node
+     * 				权限节点
      * @param value Value to set
+     * 				需要设置的值
      */
     public void setGroupInfoString(World world, String group, String node, String value) {
         setGroupInfoString(world.getName(), group, node, value);
@@ -1163,6 +1279,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param group Group name
      * 				组名
      * @return Success or Failure
@@ -1185,6 +1302,7 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @return Success or Failure
+     * 				成功或者失败(true 或者  false)
      */
     @Deprecated
     public boolean playerInGroup(String world, String player, String group) {
@@ -1205,6 +1323,7 @@ public abstract class Chat {
      * @param group Group name
      * 				组名
      * @return Success or Failure
+     * 				成功或者失败(true 或者  false)
      */
     @Deprecated
     public boolean playerInGroup(World world, String player, String group) {
@@ -1218,7 +1337,9 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @param group Group name
+     * 				组名
      * @return Success or Failure
+     * 				成功或者失败(true 或者  false)
      */
     public boolean playerInGroup(Player player, String group) {
         return playerInGroup(player.getWorld().getName(), player, group);
@@ -1231,7 +1352,9 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @return Array of groups
+     * 				组列表(数组)
      */
     public String[] getPlayerGroups(String world, OfflinePlayer player) {
     	return perms.getPlayerGroups(world, player);
@@ -1249,6 +1372,7 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @return Array of groups
+     * 				组列表(数组)
      */
     @Deprecated
     public String[] getPlayerGroups(String world, String player) {
@@ -1267,6 +1391,7 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @return Array of groups
+     * 				组列表(数组)
      */
     @Deprecated
     public String[] getPlayerGroups(World world, String player) {
@@ -1280,6 +1405,7 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @return Array of groups
+     * 				组列表(数组)
      */
     public String[] getPlayerGroups(Player player) {
         return getPlayerGroups(player.getWorld().getName(), player);
@@ -1292,7 +1418,9 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @return Players primary group
+     * 				玩家的主组
      */
     public String getPrimaryGroup(String world, OfflinePlayer player) {
     	return perms.getPrimaryGroup(world, player);
@@ -1310,6 +1438,7 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @return Players primary group
+     * 				玩家的主组
      */
     @Deprecated
     public String getPrimaryGroup(String world, String player) {
@@ -1328,6 +1457,7 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @return Players primary group
+     * 				玩家的主组
      */
     @Deprecated
     public String getPrimaryGroup(World world, String player) {
@@ -1341,6 +1471,7 @@ public abstract class Chat {
      * @param player Player Object
      * 				玩家对象
      * @return Players primary group
+     * 				玩家的主组
      */
     public String getPrimaryGroup(Player player) {
         return getPrimaryGroup(player.getWorld().getName(), player);
@@ -1348,7 +1479,10 @@ public abstract class Chat {
     
     /**
      * Returns a list of all known groups
+     * 返回所有存在组列表
+     * 
      * @return an Array of String of all groups
+     * 			所有存在组列表(数组)
      */
     public String[] getGroups() {
     	return perms.getGroups();
