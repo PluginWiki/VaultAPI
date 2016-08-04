@@ -40,8 +40,11 @@ So, what features do I _think_ you'll like the most?
  
 因此, 什么特性是我偏好的?
  * 无需在你的插件中包含我的代码
- * 
+ * 能被广泛支持
+ * 多种选择!
+ 
 ## License
+## 许可协议
 Copyright (C) 2011 Morgan Humes <morgan@lanaddict.com>
 
 Vault is free software: you can redistribute it and/or modify
@@ -58,6 +61,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with Vault.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Building
+## 构建
 VaultAPI comes with all libraries needed to build from the current branch.
 
 
