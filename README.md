@@ -138,28 +138,28 @@ public class ExamplePlugin extends JavaPlugin {
     
     public boolean onCommand(CommandSender sender, Command command, String commandLabel, String[] args) {
         if(!(sender instanceof Player)) {
-            log.info("Only players are supported for this Example Plugin, but you should not do this!!!");
+            log.info("禁止非玩家执行此命令!!!");
             return true;
         }
         
         Player player = (Player) sender;
         
         if(command.getLabel().equals("test-economy")) {
-            // Lets give the player 1.05 currency (note that SOME economic plugins require rounding!)
-            sender.sendMessage(String.format("You have %s", econ.format(econ.getBalance(player.getName()))));
+            // 让我们给玩家1.05块钱 (注意: 有些经济插件需要四舍五入!)
+            sender.sendMessage(String.format("你有 %s 元", econ.format(econ.getBalance(player.getName()))));
             EconomyResponse r = econ.depositPlayer(player, 1.05);
             if(r.transactionSuccess()) {
-                sender.sendMessage(String.format("You were given %s and now have %s", econ.format(r.amount), econ.format(r.balance)));
+                sender.sendMessage(String.format("你得到了 %s 元. 现在你有 %s", econ.format(r.amount), econ.format(r.balance)));
             } else {
-                sender.sendMessage(String.format("An error occured: %s", r.errorMessage));
+                sender.sendMessage(String.format("发生了一个错误: %s", r.errorMessage));
             }
             return true;
         } else if(command.getLabel().equals("test-permission")) {
-            // Lets test if user has the node "example.plugin.awesome" to determine if they are awesome or just suck
-            if(perms.has(player, "example.plugin.awesome")) {
-                sender.sendMessage("You are awesome!");
+            // 让我们检查玩家是否有权限节点: "example.plugin.903" 以确定他们是903还是逗比.
+            if(perms.has(player, "example.plugin.903")) {
+                sender.sendMessage("你是903!");
             } else {
-                sender.sendMessage("You suck!");
+                sender.sendMessage("你是逗比!");
             }
             return true;
         } else {
