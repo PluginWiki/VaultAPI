@@ -196,6 +196,7 @@ public abstract class Chat {
 
     /**
      * Get players suffix in the specified world.
+     * 获取玩家在指定世界后缀
      * 
      * @param world World name
      * 				世界名
@@ -212,6 +213,8 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerSuffix(String, OfflinePlayer)} instead.
      * 
      * Get players suffix
+     * 获取玩家后缀
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -243,7 +246,8 @@ public abstract class Chat {
      * 				世界名
      * @param player Player name
      * 				玩家名
-     * @param suffix Suffix 后缀
+     * @param suffix Suffix
+     * 				 后缀
      */
     @Deprecated
     abstract public void setPlayerSuffix(String world, String player, String suffix);
@@ -254,7 +258,8 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
-     * @param suffix Suffix 后缀
+     * @param suffix Suffix 
+     * 				后缀
      */
     public void setPlayerSuffix(String world, OfflinePlayer player, String suffix) {
     	setPlayerSuffix(world, player.getName(), suffix);
@@ -264,6 +269,8 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerSuffix(String, OfflinePlayer, String)} instead.
      * 
      * Set players suffix
+     * 获取玩家后缀
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -278,6 +285,7 @@ public abstract class Chat {
 
     /**
      * Set players suffix in the world they currently occupy.
+     * 获取玩家在当前所在世界里的后缀
      * 
      * @param player Player Object
      * 				玩家对象
@@ -290,18 +298,24 @@ public abstract class Chat {
 
     /**
      * Get group prefix
+     * 获取组前缀
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @return Prefix
      */
     abstract public String getGroupPrefix(String world, String group);
 
     /**
      * Get group prefix
+     * 获取组前缀
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @return Prefix
      */
     public String getGroupPrefix(World world, String group) {
@@ -310,18 +324,24 @@ public abstract class Chat {
 
     /**
      * Set group prefix
+     * 设置组前缀
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param prefix Prefix
      */
     abstract public void setGroupPrefix(String world, String group, String prefix);
 
     /**
      * Set group prefix
+     * 设置组前缀
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param prefix Prefix
      */
     public void setGroupPrefix(World world, String group, String prefix) {
@@ -330,9 +350,12 @@ public abstract class Chat {
 
     /**
      * Get group suffix
+     * 获取组后缀
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @return Suffix 
      * 				后缀
      */
@@ -340,9 +363,12 @@ public abstract class Chat {
 
     /**
      * Get group suffix
+     * 获取组后缀
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @return Suffix 
      * 				后缀
      */
@@ -352,9 +378,11 @@ public abstract class Chat {
 
     /**
      * Set group suffix
+     * 设置组后缀
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param suffix Suffix 
      * 				后缀
      */
@@ -362,6 +390,7 @@ public abstract class Chat {
 
     /**
      * Set group suffix
+     * 设置组后缀
      * @param world World Object
      * 				世界对象
      * @param group Group name
@@ -486,6 +515,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -497,6 +527,7 @@ public abstract class Chat {
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -510,6 +541,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param value Value to set
      */
@@ -520,6 +552,7 @@ public abstract class Chat {
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param value Value to set
      */
@@ -640,6 +673,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -651,6 +685,7 @@ public abstract class Chat {
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -664,6 +699,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param value Value to set
      */
@@ -674,6 +710,7 @@ public abstract class Chat {
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param value Value to set
      */
@@ -794,6 +831,7 @@ public abstract class Chat {
      * @param world Name of World
      * 				世界名
      * @param group Name of Group
+     * 				组名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -947,6 +985,7 @@ public abstract class Chat {
      * @param world Name of World
      * 				世界名
      * @param group Name of Group
+     * 				组名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -958,6 +997,7 @@ public abstract class Chat {
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -971,6 +1011,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param value Value to set
      */
@@ -981,6 +1022,7 @@ public abstract class Chat {
      * @param world World name
      * 				世界名
      * @param group Group name
+     * 				组名
      * @param node Permission node
      * @param value Value to set
      */
@@ -994,6 +1036,7 @@ public abstract class Chat {
      * 				世界名
      * @param player OfflinePlayer
      * @param group Group name
+     * 				组名
      * @return Success or Failure
      */
     public boolean playerInGroup(String world, OfflinePlayer player, String group) {
@@ -1008,6 +1051,7 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param group Group name
+     * 				组名
      * @return Success or Failure
      */
     @Deprecated
@@ -1023,6 +1067,7 @@ public abstract class Chat {
      * @param player Player name
      * 				玩家名
      * @param group Group name
+     * 				组名
      * @return Success or Failure
      */
     @Deprecated
