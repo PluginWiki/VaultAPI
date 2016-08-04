@@ -167,9 +167,12 @@ public abstract class Chat {
 
     /**
      * Set players prefix in the world they are currently in.
+     * 设置玩家在当前所在世界的前缀
      * 
      * @param player Player Object
+     * 				玩家对象
      * @param prefix Prefix
+     * 				前缀
      */
     public void setPlayerPrefix(Player player, String prefix) {
         setPlayerPrefix(player.getWorld().getName(), player, prefix);
@@ -177,11 +180,16 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerSuffix(String, OfflinePlayer)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerSuffix(String, OfflinePlayer)} 替代.
      * 
      * Get players suffix
+     * 获取玩家后缀
      * @param world World name
+     * 			世界名
      * @param player Player name
+     * 			玩家名
      * @return Suffix
+     * 			后缀
      */
     @Deprecated
     abstract public String getPlayerSuffix(String world, String player);
@@ -190,8 +198,11 @@ public abstract class Chat {
      * Get players suffix in the specified world.
      * 
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer name
+     * 				玩家
      * @return Suffix
+     * 				 后缀
      */
     public String getPlayerSuffix(String world, OfflinePlayer player) {
     	return getPlayerSuffix(world, player.getName());
@@ -202,8 +213,11 @@ public abstract class Chat {
      * 
      * Get players suffix
      * @param world World Object
+     * 				世界对象
      * @param player Player name
-     * @return Suffix
+     * 				玩家名
+     * @return Suffix 
+     * 				后缀
      */
     @Deprecated
     public String getPlayerSuffix(World world, String player) {
@@ -214,7 +228,8 @@ public abstract class Chat {
      * Get players suffix in the world they are currently in.
      * 
      * @param player Player Object
-     * @return Suffix
+     * 				玩家对象
+     * @return Suffix 后缀
      */
     public String getPlayerSuffix(Player player) {
         return getPlayerSuffix(player.getWorld().getName(), player);
@@ -225,8 +240,10 @@ public abstract class Chat {
      * 
      * Set players suffix
      * @param world World name
+     * 				世界名
      * @param player Player name
-     * @param suffix Suffix
+     * 				玩家名
+     * @param suffix Suffix 后缀
      */
     @Deprecated
     abstract public void setPlayerSuffix(String world, String player, String suffix);
@@ -235,8 +252,9 @@ public abstract class Chat {
      * Set players suffix for the world specified
      * 
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
-     * @param suffix Suffix
+     * @param suffix Suffix 后缀
      */
     public void setPlayerSuffix(String world, OfflinePlayer player, String suffix) {
     	setPlayerSuffix(world, player.getName(), suffix);
@@ -247,8 +265,11 @@ public abstract class Chat {
      * 
      * Set players suffix
      * @param world World Object
+     * 				世界对象
      * @param player Player name
-     * @param suffix Suffix
+     * 				玩家名
+     * @param suffix Suffix 
+     * 				后缀
      */
     @Deprecated
     public void setPlayerSuffix(World world, String player, String suffix) {
@@ -259,7 +280,9 @@ public abstract class Chat {
      * Set players suffix in the world they currently occupy.
      * 
      * @param player Player Object
-     * @param suffix Suffix
+     * 				玩家对象
+     * @param suffix Suffix 
+     * 				后缀
      */
     public void setPlayerSuffix(Player player, String suffix) {
         setPlayerSuffix(player.getWorld().getName(), player, suffix);
@@ -268,6 +291,7 @@ public abstract class Chat {
     /**
      * Get group prefix
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @return Prefix
      */
@@ -276,6 +300,7 @@ public abstract class Chat {
     /**
      * Get group prefix
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @return Prefix
      */
@@ -286,6 +311,7 @@ public abstract class Chat {
     /**
      * Set group prefix
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param prefix Prefix
      */
@@ -294,6 +320,7 @@ public abstract class Chat {
     /**
      * Set group prefix
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param prefix Prefix
      */
@@ -304,16 +331,20 @@ public abstract class Chat {
     /**
      * Get group suffix
      * @param world World name
+     * 				世界名
      * @param group Group name
-     * @return Suffix
+     * @return Suffix 
+     * 				后缀
      */
     abstract public String getGroupSuffix(String world, String group);
 
     /**
      * Get group suffix
      * @param world World Object
+     * 				世界对象
      * @param group Group name
-     * @return Suffix
+     * @return Suffix 
+     * 				后缀
      */
     public String getGroupSuffix(World world, String group) {
         return getGroupSuffix(world.getName(), group);
@@ -322,16 +353,20 @@ public abstract class Chat {
     /**
      * Set group suffix
      * @param world World name
+     * 				世界名
      * @param group Group name
-     * @param suffix Suffix
+     * @param suffix Suffix 
+     * 				后缀
      */
     abstract public void setGroupSuffix(String world, String group, String suffix);
 
     /**
      * Set group suffix
      * @param world World Object
+     * 				世界对象
      * @param group Group name
-     * @param suffix Suffix
+     * @param suffix Suffix 
+     * 				后缀
      */
     public void setGroupSuffix(World world, String group, String suffix) {
         setGroupSuffix(world.getName(), group, suffix);
@@ -340,6 +375,7 @@ public abstract class Chat {
 	/**
      * Get a players informational node (Integer) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param defaultValue Default value
@@ -353,7 +389,9 @@ public abstract class Chat {
 	 * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoInteger(String, OfflinePlayer, String, int)} instead.
      * Get a players informational node (Integer) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -366,7 +404,9 @@ public abstract class Chat {
      * 
      * Get a players informational node (Integer) value
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -379,6 +419,7 @@ public abstract class Chat {
     /**
      * Get a players informational node (Integer) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -390,6 +431,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Integer) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param value Value to set
@@ -403,7 +445,9 @@ public abstract class Chat {
      * 
      * Set a players informational node (Integer) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -415,7 +459,9 @@ public abstract class Chat {
      *
      * Set a players informational node (Integer) value
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -427,6 +473,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Integer) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param value Value to set
      */
@@ -437,6 +484,7 @@ public abstract class Chat {
     /**
      * Get a groups informational node (Integer) value
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param node Permission node
      * @param defaultValue Default value
@@ -447,6 +495,7 @@ public abstract class Chat {
     /**
      * Get a groups informational node (Integer) value
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param node Permission node
      * @param defaultValue Default value
@@ -459,6 +508,7 @@ public abstract class Chat {
     /**
      * Set a groups informational node (Integer) value
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -468,6 +518,7 @@ public abstract class Chat {
     /**
      * Set a groups informational node (Integer) value
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -479,6 +530,7 @@ public abstract class Chat {
     /**
      * Get a players informational node (Double) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param defaultValue Default value
@@ -493,7 +545,9 @@ public abstract class Chat {
      * 
      * Get a players informational node (Double) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -506,7 +560,9 @@ public abstract class Chat {
      * 
      * Get a players informational node (Double) value
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -519,6 +575,7 @@ public abstract class Chat {
     /**
      * Get a players informational node (Double) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -530,6 +587,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Double) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param value Value to set
@@ -542,7 +600,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoDouble(String, OfflinePlayer, String, double)} instead.
      * Set a players informational node (Double) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -553,7 +613,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoDouble(String, OfflinePlayer, String, double)} instead.
      * Set a players informational node (Double) value
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -565,6 +627,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Double) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param value Value to set
      */
@@ -575,6 +638,7 @@ public abstract class Chat {
     /**
      * Get a groups informational node (Double) value
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param node Permission node
      * @param defaultValue Default value
@@ -585,6 +649,7 @@ public abstract class Chat {
     /**
      * Get a groups informational node (Double) value
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param node Permission node
      * @param defaultValue Default value
@@ -597,6 +662,7 @@ public abstract class Chat {
     /**
      * Set a groups informational node (Double) value
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -606,6 +672,7 @@ public abstract class Chat {
     /**
      * Set a groups informational node (Double) value
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -617,6 +684,7 @@ public abstract class Chat {
     /**
      * Get a players informational node (Boolean) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param defaultValue Default value
@@ -631,7 +699,9 @@ public abstract class Chat {
      * 
      * Get a players informational node (Boolean) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -644,7 +714,9 @@ public abstract class Chat {
      * 
      * Get a players informational node (Boolean) value
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -657,6 +729,7 @@ public abstract class Chat {
     /**
      * Get a players informational node (Boolean) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -668,6 +741,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Boolean) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param value Value to set
@@ -680,7 +754,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} instead.
      * Set a players informational node (Boolean) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -691,7 +767,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} instead.
      * Set a players informational node (Boolean) value
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -703,6 +781,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Boolean) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param value Value to set
      */
@@ -713,6 +792,7 @@ public abstract class Chat {
     /**
      * Get a groups informational node (Boolean) value
      * @param world Name of World
+     * 				世界名
      * @param group Name of Group
      * @param node Permission node
      * @param defaultValue Default value
@@ -723,6 +803,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Boolean) value
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param node Permission node
      * @param defaultValue Default value
@@ -735,6 +816,7 @@ public abstract class Chat {
     /**
      * Set a groups informational node (Boolean) value
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -744,6 +826,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (Boolean) value
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -755,6 +838,7 @@ public abstract class Chat {
     /**
      * Get a players informational node (String) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param defaultValue Default value
@@ -769,7 +853,9 @@ public abstract class Chat {
      *
      * Get a players informational node (String) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -781,7 +867,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoString(String, OfflinePlayer, String, String)} instead.
      * Get a players informational node (String) value
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -794,6 +882,7 @@ public abstract class Chat {
     /**
      * Get a players informational node (String) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param defaultValue Default value
      * @return Value
@@ -805,6 +894,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (String) value
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param node Permission node
      * @param value Value to set
@@ -817,7 +907,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoString(String, OfflinePlayer, String, String)} instead.
      * Set a players informational node (String) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -828,7 +920,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoString(String, OfflinePlayer, String, String)} instead.
      * Set a players informational node (String) value
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param node Permission node
      * @param value Value to set
      */
@@ -840,6 +934,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (String) value
      * @param player Player Object
+     * 				玩家对象
      * @param node Permission node
      * @param value Value ot set
      */
@@ -850,6 +945,7 @@ public abstract class Chat {
     /**
      * Get a groups informational node (String) value
      * @param world Name of World
+     * 				世界名
      * @param group Name of Group
      * @param node Permission node
      * @param defaultValue Default value
@@ -860,6 +956,7 @@ public abstract class Chat {
     /**
      * Set a players informational node (String) value
      * @param world World Object
+     * 				世界对象
      * @param group Group name
      * @param node Permission node
      * @param defaultValue Default value
@@ -872,6 +969,7 @@ public abstract class Chat {
     /**
      * Set a groups informational node (String) value
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -881,6 +979,7 @@ public abstract class Chat {
     /**
      * Set a groups informational node (String) value
      * @param world World name
+     * 				世界名
      * @param group Group name
      * @param node Permission node
      * @param value Value to set
@@ -892,6 +991,7 @@ public abstract class Chat {
     /**
      * Check if player is member of a group.
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @param group Group name
      * @return Success or Failure
@@ -904,7 +1004,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #playerInGroup(String, OfflinePlayer, String)} instead.
      * Check if player is member of a group.
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @param group Group name
      * @return Success or Failure
      */
@@ -917,7 +1019,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #playerInGroup(String, OfflinePlayer, String)} instead.
      * Check if player is member of a group.
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param group Group name
      * @return Success or Failure
      */
@@ -929,6 +1033,7 @@ public abstract class Chat {
     /**
      * Check if player is member of a group.
      * @param player Player Object
+     * 				玩家对象
      * @param group Group name
      * @return Success or Failure
      */
@@ -939,6 +1044,7 @@ public abstract class Chat {
     /**
      * Gets the list of groups that this player has
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @return Array of groups
      */
@@ -950,7 +1056,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerGroups(String, OfflinePlayer)} instead.
      * Gets the list of groups that this player has
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @return Array of groups
      */
     @Deprecated
@@ -963,6 +1071,7 @@ public abstract class Chat {
      * Gets the list of groups that this player has
      * @param world World Object
      * @param player Player name
+     * 				玩家名
      * @return Array of groups
      */
     @Deprecated
@@ -973,6 +1082,7 @@ public abstract class Chat {
     /**
      * Gets the list of groups that this player has
      * @param player Player Object
+     * 				玩家对象
      * @return Array of groups
      */
     public String[] getPlayerGroups(Player player) {
@@ -982,6 +1092,7 @@ public abstract class Chat {
     /**
      * Gets players primary group
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
      * @return Players primary group
      */
@@ -993,7 +1104,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #getPrimaryGroup(String, OfflinePlayer)} instead. 
      * Gets players primary group
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @return Players primary group
      */
     @Deprecated
@@ -1005,7 +1118,9 @@ public abstract class Chat {
      * @deprecated As of VaultAPI 1.4 use {{@link #getPrimaryGroup(String, OfflinePlayer)} instead.
      * Gets players primary group
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @return Players primary group
      */
     @Deprecated
