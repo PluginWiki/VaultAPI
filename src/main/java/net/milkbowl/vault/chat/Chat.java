@@ -211,6 +211,7 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerSuffix(String, OfflinePlayer)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerSuffix(String, OfflinePlayer)} 代替. 
      * 
      * Get players suffix
      * 获取玩家后缀
@@ -229,6 +230,7 @@ public abstract class Chat {
 
     /**
      * Get players suffix in the world they are currently in.
+     * 获取玩家在当前所在世界的前缀
      * 
      * @param player Player Object
      * 				玩家对象
@@ -240,8 +242,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerSuffix(String, OfflinePlayer, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerSuffix(String, OfflinePlayer, String)} 替代. 
      * 
      * Set players suffix
+     * 获取玩家后缀
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -254,6 +259,7 @@ public abstract class Chat {
 
     /**
      * Set players suffix for the world specified
+     * 设置玩家在指定世界的后缀
      * 
      * @param world World name
      * 				世界名
@@ -267,6 +273,8 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerSuffix(String, OfflinePlayer, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerSuffix(String, OfflinePlayer, String)} 替代.
+     * 
      * 
      * Set players suffix
      * 获取玩家后缀
@@ -394,6 +402,7 @@ public abstract class Chat {
      * @param world World Object
      * 				世界对象
      * @param group Group name
+     * 				组名
      * @param suffix Suffix 
      * 				后缀
      */
@@ -403,6 +412,8 @@ public abstract class Chat {
 
 	/**
      * Get a players informational node (Integer) value
+     * 获取一个玩家的信息节点值(整数)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -416,7 +427,10 @@ public abstract class Chat {
 
 	/**
 	 * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoInteger(String, OfflinePlayer, String, int)} instead.
+	 * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoInteger(String, OfflinePlayer, String, int)} 替代
+	 * 
      * Get a players informational node (Integer) value
+     * 获取一个玩家的信息节点值(整数)
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -430,8 +444,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoInteger(String, OfflinePlayer, String, int)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoInteger(String, OfflinePlayer, String, int)} 替代
      * 
      * Get a players informational node (Integer) value
+     * 获取一个玩家的信息节点值(整数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -447,6 +464,8 @@ public abstract class Chat {
 
     /**
      * Get a players informational node (Integer) value
+     * 获取一个玩家的信息节点值(整数)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -459,6 +478,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Integer) value
+     * 设置一个玩家的信息节点值(整数)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -471,8 +492,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoInteger(String, OfflinePlayer, String, int)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoInteger(String, OfflinePlayer, String, int)} 替代. 
      * 
      * Set a players informational node (Integer) value
+     * 设置一个玩家的信息节点值(整数)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -485,8 +509,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoInteger(String, OfflinePlayer, String, int)} instead.
+     *				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoInteger(String, OfflinePlayer, String, int)} 替代. 
      *
      * Set a players informational node (Integer) value
+     * 设置一个玩家的信息节点值(整数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -501,6 +528,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Integer) value
+     * 设置一个玩家的信息节点值(整数)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -512,6 +541,8 @@ public abstract class Chat {
 
     /**
      * Get a groups informational node (Integer) value
+     * 获取一个组的信息节点值(整数)
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
@@ -524,6 +555,8 @@ public abstract class Chat {
 
     /**
      * Get a groups informational node (Integer) value
+     * 获取一个组的信息节点值(整数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
@@ -538,6 +571,8 @@ public abstract class Chat {
 
     /**
      * Set a groups informational node (Integer) value
+     * 设置一个组的信息节点值(整数)
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
@@ -549,6 +584,8 @@ public abstract class Chat {
 
     /**
      * Set a groups informational node (Integer) value
+     * 设置一个组的信息节点值(整数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
@@ -562,6 +599,8 @@ public abstract class Chat {
 
     /**
      * Get a players informational node (Double) value
+     * 获取一个玩家的信息节点值(双浮点数)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -575,8 +614,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoDouble(String, OfflinePlayer, String, double)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoDouble(String, OfflinePlayer, String, double)} 替代. 
      * 
      * Get a players informational node (Double) value
+     * 获取一个玩家的信息节点值(双浮点数)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -590,8 +632,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoDouble(String, OfflinePlayer, String, double)} instead
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoDouble(String, OfflinePlayer, String, double)} 替代. 
      * 
      * Get a players informational node (Double) value
+     * 获取一个玩家的信息节点值(双浮点数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -607,6 +652,8 @@ public abstract class Chat {
 
     /**
      * Get a players informational node (Double) value
+     * 获取一个玩家的信息节点值(双浮点数)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -619,6 +666,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Double) value
+     * 设置一个玩家的信息节点值(双浮点数)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -631,7 +680,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoDouble(String, OfflinePlayer, String, double)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoDouble(String, OfflinePlayer, String, double)} 替代
+     * 
      * Set a players informational node (Double) value
+     * 设置一个玩家的信息节点值(双浮点数)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -644,7 +697,10 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoDouble(String, OfflinePlayer, String, double)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoDouble(String, OfflinePlayer, String, double)} 替代.
      * Set a players informational node (Double) value
+     * 设置一个玩家的信息节点值(双浮点数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -659,6 +715,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Double) value
+     * 设置一个玩家的信息节点值(双浮点数)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -670,6 +728,8 @@ public abstract class Chat {
 
     /**
      * Get a groups informational node (Double) value
+     * 获取一个组的信息节点值(双浮点数)
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
@@ -682,6 +742,8 @@ public abstract class Chat {
 
     /**
      * Get a groups informational node (Double) value
+     * 获取一个组的信息节点值(双浮点数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
@@ -696,6 +758,8 @@ public abstract class Chat {
 
     /**
      * Set a groups informational node (Double) value
+     * 获取一个组的信息节点值(双浮点数)
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
@@ -707,6 +771,8 @@ public abstract class Chat {
 
     /**
      * Set a groups informational node (Double) value
+     * 获取一个组的信息节点值(双浮点数)
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
@@ -720,6 +786,8 @@ public abstract class Chat {
 
     /**
      * Get a players informational node (Boolean) value
+     * 获取一个玩家的信息节点值(布尔值)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -733,8 +801,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} 替代 
      * 
      * Get a players informational node (Boolean) value
+     * 获取一个玩家的信息节点值(布尔值)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -748,8 +819,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} 替代. 
      * 
      * Get a players informational node (Boolean) value
+     * 获取一个玩家的信息节点值(布尔值)
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -765,6 +839,8 @@ public abstract class Chat {
 
     /**
      * Get a players informational node (Boolean) value
+     * 获取一个玩家的信息节点值(布尔值)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -777,6 +853,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Boolean) value
+     * 设置一个玩家的信息节点值(布尔值)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -789,7 +867,11 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} 替代 
+     * 
      * Set a players informational node (Boolean) value
+     * 设置一个玩家的信息节点值(布尔值)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -802,7 +884,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoBoolean(String, OfflinePlayer, String, boolean)} 替代
+     * 
      * Set a players informational node (Boolean) value
+     * 设置一个玩家的信息节点值(布尔值)
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -817,6 +903,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Boolean) value
+     * 设置一个玩家的信息节点值(布尔值)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -828,6 +916,8 @@ public abstract class Chat {
 
     /**
      * Get a groups informational node (Boolean) value
+     * 获取一个组的信息节点值(布尔值)
+     * 
      * @param world Name of World
      * 				世界名
      * @param group Name of Group
@@ -840,6 +930,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Boolean) value
+     * 设置一个玩家的信息节点值(布尔值)
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
@@ -853,6 +945,8 @@ public abstract class Chat {
 
     /**
      * Set a groups informational node (Boolean) value
+     * 设置一个组的信息节点值(布尔值)
+     * 
      * @param world World name
      * 				世界名
      * @param group Group name
@@ -863,6 +957,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (Boolean) value
+     * 设置一个组的信息节点值(布尔值)
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
@@ -875,6 +971,8 @@ public abstract class Chat {
     
     /**
      * Get a players informational node (String) value
+     * 获取玩家信息节点值(字符串)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -888,8 +986,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoString(String, OfflinePlayer, String, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoString(String, OfflinePlayer, String, String)} 替代 
      *
      * Get a players informational node (String) value
+     * 获取玩家信息节点值(字符串)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -903,7 +1004,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerInfoString(String, OfflinePlayer, String, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerInfoString(String, OfflinePlayer, String, String)} 替代 
+     * 
      * Get a players informational node (String) value
+     * 获取玩家信息节点值(字符串)
+     * 
      * @param world World Object
      * 				世界对象
      * @param player Player name
@@ -919,6 +1024,8 @@ public abstract class Chat {
 
     /**
      * Get a players informational node (String) value
+     * 获取玩家信息节点值(字符串)
+     * 
      * @param player Player Object
      * 				玩家对象
      * @param node Permission node
@@ -931,6 +1038,8 @@ public abstract class Chat {
     
     /**
      * Set a players informational node (String) value
+     * 设置玩家信息节点值(字符串)
+     * 
      * @param world World name
      * 				世界名
      * @param player OfflinePlayer
@@ -943,7 +1052,11 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoString(String, OfflinePlayer, String, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoString(String, OfflinePlayer, String, String)} 替代 
+     * 
      * Set a players informational node (String) value
+     * 设置玩家信息节点值(字符串)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -956,7 +1069,10 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerInfoString(String, OfflinePlayer, String, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerInfoString(String, OfflinePlayer, String, String)} 替代 
      * Set a players informational node (String) value
+     * 设置玩家信息节点值(字符串)
+     * 
      * @param world World name
      * 				世界名
      * @param player Player name
@@ -994,6 +1110,8 @@ public abstract class Chat {
 
     /**
      * Set a players informational node (String) value
+     * 设置玩家的信息节点值(字符串)
+     * 
      * @param world World Object
      * 				世界对象
      * @param group Group name
