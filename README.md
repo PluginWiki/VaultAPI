@@ -68,7 +68,10 @@ VaultAPI的当前分支带有所有需要被构建的库.
 
 
 ## Implementing Vault
+## 使用Vault
 Implementing Vault is quite simple. It requires getting the Economy, Permission, or Chat service from the Bukkit ServiceManager. See the example below:
+
+使Vault生效是非常简单的. 它需要从Bukkit的服务管理器获得经济, 权限, 聊天服务. 看看下面的梨子(例子):
 
 ```java
 package com.example.plugin;
