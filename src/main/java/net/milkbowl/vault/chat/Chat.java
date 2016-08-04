@@ -50,22 +50,32 @@ public abstract class Chat {
     
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerPrefix(String, OfflinePlayer)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerPrefix(String, OfflinePlayer)} 来代替.
      * 
      * Get players prefix
+     * 获得玩家的前缀
      * @param world World name
+     * 				世界名
      * @param player Player name
+     * 				玩家名
      * @return Prefix
+     * 			前缀
      */
     @Deprecated
     abstract public String getPlayerPrefix(String world, String player);
     
     /**
      * Get a players prefix in the given world
+     * 获得玩家在给定世界的前缀
      * Use NULL for world if requesting a global prefix
+     * 如果要获取全局前缀则将world设为null即可.
      * 
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @return Prefix
+     * 			前缀
      */
     public String getPlayerPrefix(String world, OfflinePlayer player) {
     	return getPlayerPrefix(world, player.getName());
@@ -73,11 +83,16 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #getPlayerPrefix(String, OfflinePlayer)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #getPlayerPrefix(String, OfflinePlayer)} 替代.
      * 
      * Get players prefix
+     * 获取玩家前缀
      * @param world World Object
+     * 			世界对象
      * @param player Player name
+     * 			玩家名
      * @return Prefix
+     * 			前缀
      */
     @Deprecated
     public String getPlayerPrefix(World world, String player) {
@@ -86,10 +101,14 @@ public abstract class Chat {
 
     /**
      * Get players prefix from the world they are currently in. 
+     * 获取玩家在他们当前所在世界的前缀
      * May or may not return the global prefix depending on implementation.
+     * 有可能返回或者不返回全局前缀. 这取决于实现方法
      * 
      * @param player Player Object
+     * 			玩家对象
      * @return Prefix
+     * 			前缀
      */
     public String getPlayerPrefix(Player player) {
         return getPlayerPrefix(player.getWorld().getName(), player);
@@ -97,22 +116,31 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerPrefix(String, OfflinePlayer, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerPrefix(String, OfflinePlayer, String)} 替代.
      * 
      * Set players prefix
+     * 设置玩家前缀
      * @param world World name
+     * 			世界名
      * @param player Player name
+     * 			玩家名
      * @param prefix Prefix
+     * 			前缀
      */
     @Deprecated
     abstract public void setPlayerPrefix(String world, String player, String prefix);
 
     /**
-     * Sets players prefix in the given world.
+     * 设置玩家在给定世界的前缀.
      * Use NULL for world for setting in the Global scope.
+     * 使用NULL做为世界名设置全局前缀.
      * 
      * @param world World name
+     * 				世界名
      * @param player OfflinePlayer
+     * 				玩家
      * @param prefix Prefix
+     * 				前缀
      */
     public void setPlayerPrefix(String world, OfflinePlayer player, String prefix) {
     	setPlayerPrefix(world, player.getName(), prefix);
@@ -120,12 +148,17 @@ public abstract class Chat {
 
     /**
      * @deprecated As of VaultAPI 1.4 use {{@link #setPlayerPrefix(String, OfflinePlayer, String)} instead.
+     * 				从 VaultAPI 1.4 起使用 {{@link #setPlayerPrefix(String, OfflinePlayer, String)} 替代.
      * 
      * Set players prefix in the given world.
+     * 设置玩家在指定世界的前缀
      * 
      * @param world World Object
+     * 				世界对象
      * @param player Player name
+     * 				玩家名
      * @param prefix Prefix
+     * 				前缀
      */
     @Deprecated
     public void setPlayerPrefix(World world, String player, String prefix) {
