@@ -64,6 +64,8 @@ along with Vault.  If not, see <http://www.gnu.org/licenses/>.
 ## 构建
 VaultAPI comes with all libraries needed to build from the current branch.
 
+VaultAPI的当前分支带有所有需要被构建的库.
+
 
 ## Implementing Vault
 Implementing Vault is quite simple. It requires getting the Economy, Permission, or Chat service from the Bukkit ServiceManager. See the example below:
